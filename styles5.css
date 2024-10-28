@@ -1,0 +1,100 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: url('https://www.boredpanda.com/blog/wp-content/uploads/2014/10/forest-photography-3__880.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  background-color: rgba(90, 80, 0, 0.7);
+  border-radius: 15px;
+}
+
+.menu-item {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #BF5700;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.menu-item:hover {
+  background-color: #D35400;
+  transform: scale(1.1);
+}
+
+.content-display {
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin: 1rem auto;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 900px;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content-display img {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .content-display {
+    width: 80%;
+    padding: 0.5rem;
+  }
+}
+
